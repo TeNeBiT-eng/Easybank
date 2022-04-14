@@ -3,6 +3,7 @@ margin: 0;
 padding: 0;
 box-sizing: border-box;
 list-style-type: none;
+text-decoration: none;
 font-family: 'Public Sans', sans-serif;
 }
 
@@ -21,8 +22,12 @@ font-family: 'Public Sans', sans-serif;
     display: none;
 }
 
+.navbar a button{
+    display: none;
+}
+
 .phone-mockup{
-    max-width: 768px;
+    /* max-width: 768px; */
     width: 100%;
     /* transform: translateY(-500px); */
 }
@@ -30,6 +35,7 @@ font-family: 'Public Sans', sans-serif;
 .section1{
     background-image: url(./Img/bg-intro-mobile.svg);
     background-repeat: no-repeat;
+    background-size: contain;
     display: flex;
     flex-direction: column;
     padding-bottom: 70px;
@@ -70,6 +76,11 @@ font-family: 'Public Sans', sans-serif;
     transition: transform .3s;
 }
 
+.request-btn2:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
 .section2 .container-icon .icon li img{
     padding-top: 30px;
 }
@@ -101,6 +112,7 @@ font-family: 'Public Sans', sans-serif;
     text-align: center;
     color: hsl(233, 8%, 62%);
     padding-top: 20px;
+    line-height: 26px;
 }
 
 .icon{
@@ -140,6 +152,7 @@ font-family: 'Public Sans', sans-serif;
     width: 100%;
     margin: 0 auto; 
     background-color: hsl(0, 0%, 98%);
+    padding-bottom: 70px;
 }
 
 .section-bg header p{
@@ -152,21 +165,17 @@ font-family: 'Public Sans', sans-serif;
 
 figure img{
     width: 100%;
+    height: 390px;
+    /* max-height: 100%;
+    object-fit: cover; */
     margin: 0 auto; 
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-}    
+    /* object-position: 50% 50%; */
+} 
+
 .test{
     padding: 2vh 4vw;
-}
-
-.currency{
-    background-color: white;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    padding-bottom: 30px;
 }
 
 .header{
@@ -181,10 +190,20 @@ figcaption{
     padding-left: 20px;
 }
 
+.currency{
+    background-color: white;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding-bottom: 30px;
+    margin-top: 20px;
+}
 .currency-content{
     line-height: 22px;
     padding-top: 10px;
     padding-left: 20px;
+    color: hsl(233, 8%, 62%);
 }
 
 .restaurant{
@@ -196,11 +215,11 @@ figcaption{
     padding-bottom: 30px;
     margin-top: 20px;
 }
-
 .restaurant-content{
     line-height: 22px;
     padding-top: 10px;
     padding-left: 20px;
+    color: hsl(233, 8%, 62%);
 }
 
 .plane{
@@ -212,11 +231,11 @@ figcaption{
     padding-bottom: 30px;
     margin-top: 20px;
 }
-
 .plane-content{
     line-height: 22px;
     padding-top: 10px;
     padding-left: 20px;
+    color: hsl(233, 8%, 62%);
 }
 
 .confetti{
@@ -228,15 +247,167 @@ figcaption{
     padding-bottom: 30px;
     margin-top: 20px;
 }
-
 .confetti-content{
     line-height: 22px;
     padding-top: 10px;
     padding-left: 20px;
+    color: hsl(233, 8%, 62%);
 }
 
 .footer-bg{
     background-color:  hsl(233, 26%, 24%);
+    width: 100%;
+    margin: 0 auto;
+}
+
+ul li{
+    color: white;
+    text-align: center;
+}
+
+.image-container{
+    text-align: center;
+}
+
+.all-rights{
+    color: hsl(233, 8%, 62%);
+    text-align: center;
+}
+
+.request-btn3{
+    width: 150px;
+    height: 40px;
+    border-radius: 40px;
+    border: none;
+    color: white;
+    background: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+    transition: transform .3s;
+    text-align: center;
+}
+
+.request-btn3-container{
+    text-align: center; 
+    padding-top: 30px;
+}
+
+.logo-color{
+    padding-top: 30px;
+    
+}
+
+.social-media img{
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-inline: 5px;
+}
+
+ul li{
+    padding: 10px;
+}
+
+.all-rights{
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+
+
+
+
+
+@media (min-width: 768px) {
+    .head{
+        display: flex;
+        justify-content: space-between;
+        flex-basis: 65vw;
+    }
+    .home-about{
+        display: flex;
+        padding-left: 20px;
+    }
+    .bug{
+        display: none;
+    }
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        /* align-items: baseline; */
+    }
+    .home-about li a{
+        color: hsl(233, 8%, 62%);
+    }
+    .navbar img{
+        /* padding-left: 20px; */
+        max-width: 150px;
+        max-height: 30px;
+        padding-top: 10px;
+        
+        transform: translateX(87px);
+    }
+    .home-about li a:hover{
+        color: hsl(136, 65%, 51%);
+        transition: .3s;
+        text-decoration: underline;
+        text-underline-offset: 10px;  
+    }
+    .icon{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .container-section3{
+        display: grid;
+        grid-template-columns: auto auto;
+        column-gap: 20px;
+    }
+}
+
+@media (min-width: 900px) {
+    .section1{
+        background-image: url(./Img/bg-intro-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: 900px;
+        background-position: 900px;
+        background-position-y: -100px;
+        background-position-x: 450px;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .phone-mockup{
+        max-width: 100%;
+        width: 100%;
+        max-height: 900px;
+        object-position: 50px;
+        transform: translateY(160px);
+        /* z-index: 100; */
+    }
+    .quote{
+        max-width: 435px;
+        padding-top: 100px;
+        margin: 0 50px;
+        
+    }
+    .mainquote{
+        text-align: start;
+        padding-left: 57px;
+        
+    }
+    .subquote{
+        text-align: start;
+        padding-left: 57px;
+    }
+    .request-btn2-container{
+        text-align: start;
+        padding-left: 57px;
+    }
+    .mainquote2{
+        padding-right: 400px;
+    }
+    .subquote2{
+        max-width: 600px;
+        text-align: start;
+        padding-left: 75px;
+    }
 }
 
 
@@ -249,9 +420,8 @@ figcaption{
 
 
 
-/* .backgroundWrap2{
-    background-color: red;
-} */
+
+
 
 
 
