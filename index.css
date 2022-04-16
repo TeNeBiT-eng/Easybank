@@ -121,30 +121,44 @@ font-family: 'Public Sans', sans-serif;
 }
 
 .section2-subheader{
-    font-size: 20px;
+    font-size: 18px;
     padding-top: 20px;
     color: hsl(233, 26%, 24%);
 }
 
+.online-banking-header{
+    color: hsl(233, 26%, 24%);
+}
 .online-banking-content{
     text-align: center;
-    padding-top: 20px;
+    padding: 10px;
     color: hsl(233, 8%, 62%);
 }
 
+.simple-budgeting-header{
+    color: hsl(233, 26%, 24%);
+}
 .simple-budgeting-content{
     text-align: center;
-    padding-top: 20px;
+    padding: 10px;
     color: hsl(233, 8%, 62%);
+}
+
+.fast-onboarding-header{
+    color: hsl(233, 26%, 24%);
 }
 .fast-onboarding-content{
     text-align: center;
-    padding-top: 20px;
+    padding: 10px;
     color: hsl(233, 8%, 62%);
+}
+
+.open-api-header{
+    color: hsl(233, 26%, 24%);
 }
 .open-api-content{
     text-align: center;
-    padding-top: 20px;
+    padding: 10px;
     color: hsl(233, 8%, 62%);
 }
 
@@ -165,7 +179,7 @@ font-family: 'Public Sans', sans-serif;
 
 figure img{
     width: 100%;
-    height: 390px;
+    height: 300px;
     /* max-height: 100%;
     object-fit: cover; */
     margin: 0 auto; 
@@ -356,7 +370,7 @@ ul li{
     .container-section3{
         display: grid;
         grid-template-columns: auto auto;
-        column-gap: 20px;
+        column-gap: 40px;
     }
 }
 
@@ -364,10 +378,10 @@ ul li{
     .section1{
         background-image: url(./Img/bg-intro-desktop.svg);
         background-repeat: no-repeat;
-        background-size: 900px;
+        background-size: 1300px;
         background-position: 900px;
-        background-position-y: -100px;
-        background-position-x: 450px;
+        background-position-y: -200px;
+        background-position-x: 600px;
         display: flex;
         flex-direction: row-reverse;
         align-items: center;
@@ -383,7 +397,7 @@ ul li{
     }
     .quote{
         max-width: 435px;
-        padding-top: 100px;
+        padding-top: 50px;
         margin: 0 50px;
         
     }
@@ -400,13 +414,149 @@ ul li{
         text-align: start;
         padding-left: 57px;
     }
-    .mainquote2{
-        padding-right: 400px;
+    .section2{
+        background-color: hsl(220, 16%, 96%);
+        height: 500px;
     }
-    .subquote2{
-        max-width: 600px;
+    
+    .mainquote2{
+        color: hsl(233, 26%, 24%);
+        font-size: 25px;
         text-align: start;
-        padding-left: 75px;
+    }
+    
+    .subquote2{
+        color: hsl(233, 8%, 62%);
+        width: 100%;
+        max-width: 600px;
+        line-height: 24px;
+        padding-top: 20px;
+        text-align: start;
+    }
+    
+    .section2{
+        padding-top: 70px;
+        padding-left: 52px;
+        height: 600px;
+    }
+    
+    .icon{
+        display: flex;
+        list-style-type: none;
+        padding-top: 50px;
+        justify-content: space-around;
+        width: 100%;
+        max-width: 1030px;
+        align-items: baseline;
+        padding-left: px;
+        column-gap: 40px;
+    }
+    
+    .icon {
+        height: 100px;
+    }
+    
+    .icon p{
+        padding: 10px 0;
+    }
+    
+    .online-banking-content{
+        color: hsl(233, 8%, 62%);
+        font-size: 15px;
+        line-height: 24px;
+        text-align: start;
+    }
+    .simple-budgeting-content{
+        color: hsl(233, 8%, 62%);
+        line-height: 24px;
+        text-align: start;
+    }
+    .fast-onboarding-content{
+        color: hsl(233, 8%, 62%);
+        line-height: 24px;
+        text-align: start;
+    }
+    .open-api-content{
+        color: hsl(233, 8%, 62%);
+        line-height: 24px;
+        text-align: start;
+    }
+    .online-banking-header{
+        font-size: 20px;
+        color: hsl(233, 26%, 24%);
+        text-align: start;
+    }
+    .simple-budgeting-header{
+        font-size: 20px;
+        color: hsl(233, 26%, 24%);
+        text-align: start;
+    }
+    .fast-onboarding-header{
+        font-size: 20px;
+        color: hsl(233, 26%, 24%);
+        text-align: start;
+    }
+    .open-api-header{
+        font-size: 20px;
+        color: hsl(233, 26%, 24%);
+        text-align: start;
+    }
+    .hey{
+        text-align: start;
+    }
+    .container-section3{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        padding-left: 80px;
+    }
+    .container-section3 figure img{
+        height: 200px;
+    }
+    .footer-bg{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 40px;
+    }
+    .image-container{
+        padding-left: 120px;
+    }
+    .social-media{
+        padding-top: 23px;
+    }
+    .easy{
+        padding-right: 50px;
+        padding-top: 10px;
+    }
+    .request-btn3-container{
+        padding-left: 33px;
+    }
+    .footer-bg ul li:hover{
+        color: hsl(136, 65%, 51%);
+        transition: .3s;
+        cursor: pointer;
+        text-decoration: underline;
+        text-underline-offset: 5px;
+    }
+    .request-btn3{
+        width: 150px;
+        height: 40px;
+        border-radius: 40px;
+        border: none;
+        color: white;
+        background: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+        transition: transform .3s;
+        margin-top: -5px;
+    }
+    
+    .request-btn3:hover{
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+    .ul{
+        padding-top: 20px;
+        display: flex;
+        padding-right: 300px;
+        column-gap: 70px;
     }
 }
 
