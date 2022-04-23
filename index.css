@@ -136,7 +136,7 @@
 .request-btn2 {
   width: 150px;
   height: 40px;
-  border-radius: 40px;
+  border-radius: 5px;
   border: none;
   color: white;
   background: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
@@ -197,6 +197,7 @@
 .online-banking-content {
   text-align: center;
   padding: 10px;
+  font-size: 12px;
   color: hsl(233, 8%, 62%);
 }
 
@@ -206,6 +207,7 @@
 .simple-budgeting-content {
   text-align: center;
   padding: 10px;
+   font-size: 12px;
   color: hsl(233, 8%, 62%);
 }
 
@@ -215,6 +217,7 @@
 .fast-onboarding-content {
   text-align: center;
   padding: 10px;
+  font-size: 12px;
   color: hsl(233, 8%, 62%);
 }
 
@@ -235,7 +238,7 @@
 }
 
 .section-bg header p {
-  font-size: 2em;
+  font-size: 1.5rem;
   color: hsl(233, 26%, 24%);
   padding-top: 24px;
   padding-bottom: 5px;
@@ -262,15 +265,14 @@ figure img {
 }
 
 .header {
-  font-size: 21px;
+  font-size: 1rem;
+  margin: .5em 0;
   color: hsl(233, 26%, 24%);
-  padding-left: 20px;
 }
 
 figcaption {
   font-size: smaller;
-  padding-bottom: 20px;
-  padding-left: 20px;
+  margin: .8em 0;
 }
 
 .currency {
@@ -284,8 +286,7 @@ figcaption {
 }
 .currency-content {
   line-height: 22px;
-  padding-top: 10px;
-  padding-left: 20px;
+  font-size: 12px;
   color: hsl(233, 8%, 62%);
 }
 
@@ -300,8 +301,7 @@ figcaption {
 }
 .restaurant-content {
   line-height: 22px;
-  padding-top: 10px;
-  padding-left: 20px;
+font-size: 12px;
   color: hsl(233, 8%, 62%);
 }
 
@@ -314,10 +314,14 @@ figcaption {
   padding-bottom: 30px;
   margin-top: 20px;
 }
+
+.pad{
+  padding: 1em;
+}
+
 .plane-content {
   line-height: 22px;
-  padding-top: 10px;
-  padding-left: 20px;
+  font-size: 12px;
   color: hsl(233, 8%, 62%);
 }
 
@@ -331,9 +335,9 @@ figcaption {
   margin-top: 20px;
 }
 .confetti-content {
-  line-height: 22px;
-  padding-top: 10px;
-  padding-left: 20px;
+  line-height: 20px;
+  padding: 1em 0;
+  font-size: 12px;
   color: hsl(233, 8%, 62%);
 }
 
@@ -394,6 +398,9 @@ ul li {
 .attribution{
     text-align: center;
     color: white;
+        display: flex;
+    justify-content: center;
+    align-items: center;
 }
 @media (min-width: 768px) {
   .head {
@@ -438,7 +445,7 @@ ul li {
   .container-section3 {
     display: grid;
     grid-template-columns: auto auto;
-    column-gap: 40px;
+    column-gap: 1em;
   }
 }
 
@@ -470,7 +477,7 @@ ul li {
   }
   .home-about{
       transform: translateX(-55px);
-      justify-content: space-evenly;
+      /* justify-content: space-evenly; */
   }
   .mainquote {
     text-align: start;
@@ -532,7 +539,7 @@ ul li {
 
   .online-banking-content {
     color: hsl(233, 8%, 62%);
-    font-size: 15px;
+    font-size: 12px;
     line-height: 24px;
     text-align: start;
   }
@@ -549,6 +556,7 @@ ul li {
   .open-api-content {
     color: hsl(233, 8%, 62%);
     line-height: 24px;
+    font-size: 12px;
     text-align: start;
   }
   .online-banking-header {
@@ -577,7 +585,7 @@ ul li {
   .container-section3 {
     display: grid;
     grid-template-columns: auto auto auto auto;
-    padding-left: 80px;
+    
   }
   .container-section3 figure img {
     height: 200px;
@@ -639,7 +647,7 @@ ul li {
   }
   .home-about{
       transform: translateX(-100px);
-      justify-content: space-evenly;
+      
   }
 }
 
