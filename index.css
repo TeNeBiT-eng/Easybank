@@ -237,9 +237,13 @@
 .section-bg header p {
   font-size: 2em;
   color: hsl(233, 26%, 24%);
-  text-align: center;
-  padding-top: 70px;
-  padding-bottom: 30px;
+  padding-top: 24px;
+  padding-bottom: 5px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 figure img {
